@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D1E2F"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_x="100dp"
+        android:layout_y="100dp"
+        android:background="#A9E5BB"
+        android:onClick="startGame"
+        android:text="Начать игру"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="90dp"
+        android:layout_y="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#A9E5BB"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:text="Угадай число от 1 до 100" />
+
+    <EditText
+        android:id="@+id/etGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="190dp"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        android:textColor="#A9E5BB"
+        android:hint="Введите число"
+        android:textColorHint="#A9E5BB"
+        android:inputType="numberPassword"/>
+
+    <Button
+        android:id="@+id/btnSubmitGuess"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_x="100dp"
+        android:layout_y="260dp"
+        android:onClick="submitGuess"
+        android:background="#FCF6B1"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:text="Проверить" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_x="150dp"
+        android:layout_y="560dp"
+        android:onClick="submitGuess"
+        android:background="#FCF6B1"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:text="В меню" />
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+</AbsoluteLayout>

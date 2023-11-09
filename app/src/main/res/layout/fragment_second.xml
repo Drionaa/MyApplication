@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D1E2F">
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="40dp"
+        android:text="Камень, ножницы, бумага!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold|italic"
+        android:textColor="#FCF6B1"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="165dp"
+        android:layout_y="90dp"
+        android:text="Играем!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#FCF6B1"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:layout_x="40dp"
+        android:layout_y="160dp"
+        android:background="#F7B32B"
+        android:layout_below="@+id/resultView"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Камень"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:layout_x="165dp"
+        android:layout_y="160dp"
+        android:background="#F7B32B"
+        android:layout_below="@+id/rockButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Бумага"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:layout_x="290dp"
+        android:layout_y="160dp"
+        android:background="#F7B32B"
+        android:layout_below="@id/paperButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Ножницы"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_x="150dp"
+        android:layout_y="590dp"
+        android:onClick="submitGuess"
+        android:background="#FCF6B1"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="В меню" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/paperButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+</AbsoluteLayout>
